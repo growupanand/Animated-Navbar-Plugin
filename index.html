@@ -5,7 +5,8 @@
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="Nav-bar : a navigation bar plugin where background follow cursor" />
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="nav.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Nav-bar</title>
@@ -35,6 +36,49 @@
 <a name="nav-bar" class="anchor" href="#nav-bar"><span class="octicon octicon-link"></span></a>nav-bar</h1>
 
 <p>a navigation bar plugin where background follow cursor</p>
+<h1>with "class"</h1>
+
+<ul class="my1 bar nav">
+  <span id="my1" class="def1"></span>
+  <li class="active"> <a href="#">HOME</a> </li>
+  <li><a href="#">PROFILE</a> </li>
+  <li><a href="#">LINK</a> </li>
+  <li><a href="#">ABOUT this page</a> </li>
+</ul>
+<ul class="my2 nav">
+  <span id="my2" class="def2"></span>
+  <li class="active"> <a href="#">HOME</a> </li>
+  <li><a href="#">PROFILE</a> </li>
+  <li><a href="#">LINK</a> </li>
+  <li><a href="#">ABOUT this page</a> </li>
+</ul>
+
+<h1>with "data-color"</h1>
+
+<ul class="my3 bar nav">
+  <span id="my3"></span>
+  <li> <a data-color="orange" href="#">link orange</a> </li>
+  <li  class="active"><a data-color="#f00" href="#"> link red</a> </li>
+  <li><a data-color="green" href="#"> link green</a> </li>
+  <li><a data-color="blue" href="#"> link blue</a> </li>
+</ul>
+<ul class="my4 nav">
+  <span id="my4"></span>
+  <li> <a data-color="orange" href="#">link orange</a> </li>
+  <li><a data-color="#f00" href="#"> link red</a> </li>
+  <li class="active"><a data-color="green" href="#"> link green</a> </li>
+  <li><a data-color="blue" href="#"> link blue</a> </li>
+</ul>
+
+<h1>combination</h1>
+<ul class="my5 nav">
+  <span id="my5" class="com"></span>
+  <li> <a data-color="orange" href="#">link orange</a> </li>
+  <li><a data-color="#f00" href="#"> link red</a> </li>
+  <li><a data-color="green" href="#"> link green</a> </li>
+  <li><a data-color="blue" href="#"> link blue</a> </li>
+  <li  class="active"><a data-color="black" href="#"> link black</a> </li>
+</ul>
       </section>
     </div>
 
@@ -47,6 +91,14 @@
     </div>
 
     
-
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".my1").nav("#my1");
+  $(".my2").nav("#my2");
+  $(".my3").nav("#my3");
+  $(".my4").nav("#my4");
+  $(".my5").nav("#my5");
+});
+</script>
   </body>
 </html>
