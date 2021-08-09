@@ -1,4 +1,4 @@
-nav-bar
+Animated Navbar Background Box
 =======
 
-a navigation bar plugin where background follow cursor
+This is a jquery plugin for creating navbar with animated effect where background box follow curser.
